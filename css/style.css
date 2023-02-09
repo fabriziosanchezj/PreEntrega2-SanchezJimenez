@@ -167,10 +167,15 @@ nav{
     display:none;
 }
 
+.svc{
+    position: relative;
+}
+
 .serv ul{
     margin-left: 30px;
     list-style-type: none;
 }
+
     /*COLOR AL SELECCIONAR*/
 .serv li:hover{
     color: #26348C;
@@ -180,13 +185,14 @@ nav{
     /*  IMG HORIZONTALES */
 .servH li:active .servImgH{
     display: flex;
-    
 }
 .servImgH{
     display: none;
-    width: 800px;
-    height: 500px;
-    margin-left: 700px  ;
+    width: 600px;
+    height: 400px;
+    margin-left: 700px;
+    position: absolute;
+    top: 0;
 }
 
     /*  IMG VERTICALES */
@@ -195,9 +201,11 @@ nav{
 } 
 .servImgV{
     display: none;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     margin-left: 700px;
+    position: absolute;
+    top: 0;
 }
 
 /* TERMINA SERVICIOS PARA EVENTOS*/
@@ -267,6 +275,7 @@ footer {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    position: relative;
 }
 
 .telefonos li{
