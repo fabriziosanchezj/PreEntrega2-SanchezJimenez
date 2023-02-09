@@ -149,12 +149,28 @@ nav{
     display: flex;
 }
 
+.serv{
+    margin-top: 15px;
+    margin-left: 100px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    border-color: black;
+    gap: 50px;
+}
+
+.serv div:hover .servMostrar{
+    display:flex;
+    flex-direction: column;
+}
+.servMostrar {
+    display:none;
+}
+
 .serv ul{
     margin-left: 30px;
     list-style-type: none;
 }
-
-
     /*COLOR AL SELECCIONAR*/
 .serv li:hover{
     color: #26348C;
@@ -162,29 +178,27 @@ nav{
     cursor: pointer;
 }
     /*  IMG HORIZONTALES */
+.servH li:active .servImgH{
+    display: flex;
+    
+}
 .servImgH{
     display: none;
     width: 800px;
     height: 500px;
     margin-left: 700px  ;
 }
+
     /*  IMG VERTICALES */
-.servImgV{
-    display: none;
-    width: 500px;
-    height: 800px;
-    margin-left: 700px;
-}
-    /*MESAS*/
-.mesas li:active .servImgH{
-    display: flex;
-}
-    /*SILLAS*/
-
-
-.sillas li:active .servImgV{
+.servV li:active .servImgV{
     display: flex;
 } 
+.servImgV{
+    display: none;
+    width: 300px;
+    height: 500px;
+    margin-left: 700px;
+}
 
 /* TERMINA SERVICIOS PARA EVENTOS*/
 
