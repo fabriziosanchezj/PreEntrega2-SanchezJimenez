@@ -33,6 +33,9 @@ font-family: 'Montserrat', sans-serif;
     color: #26348C;
 }
 
+/*body{
+    background: linear-gradient(white, rgb(199, 198, 198))
+} */
 /* HEADER Y BARRA DE NAV */
 header {
     background-color: #26348C;
@@ -156,6 +159,7 @@ nav{
 .serv li:hover{
     color: #26348C;
     font-weight: 700;
+    cursor: pointer;
 }
     /*  IMG HORIZONTALES */
 .servImgH{
@@ -172,13 +176,16 @@ nav{
     margin-left: 700px;
 }
     /*MESAS*/
-.mesas li:active:nth-child(4) .servImgH{
+.mesas li:active .servImgH{
     display: flex;
 }
     /*SILLAS*/
-.sillas li:hover:nth-child(3) .servImgV{
+
+
+.sillas li:active .servImgV{
     display: flex;
-}
+} 
+
 /* TERMINA SERVICIOS PARA EVENTOS*/
 
 /* EMPIEZA LONAS */
