@@ -17,14 +17,20 @@ color: #26348C
 
 font-family: 'Montserrat', sans-serif;
 
-*/
+background-color: white
+linear-gradient:
 
+*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.fondo{
+    background: linear-gradient(white, rgb(223, 222, 222))
+} 
 
 .h1Invisible{
     display: none;
@@ -44,9 +50,6 @@ font-family: 'Montserrat', sans-serif;
     color: #26348C;
 }
 
-/*body{
-    background: linear-gradient(white, rgb(199, 198, 198))
-} */
 /* HEADER Y BARRA DE NAV */
 header {
     background-color: #26348C;
