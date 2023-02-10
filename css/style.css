@@ -116,7 +116,7 @@ nav{
     display: flex;
     width: 300%;
     
-    animation: cambio 30s infinite alternate;
+    animation: cambio 24s infinite alternate;
 }
     .slider li{
     list-style: none;
@@ -132,7 +132,7 @@ nav{
     
 .baner{
     display: flex;
-    background-color: black;
+    background-color: white;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -198,7 +198,7 @@ nav{
 
 .margQS p{
     margin-left: 2%;
-    font-size: 20px;
+    font-size: 22px;
     width: 85%;
     height: auto
 }
@@ -353,15 +353,118 @@ nav{
     font-weight: 600;
 }
 /* TERMINA LONAS */
+
 /*EMPIEZA CONTACTANOS*/
-.globalContacto{
+    /*GLOBAL CONTACTANOS*/
+.glbCont{
     margin-top: 2%;
     margin-bottom: 3%;
     font-family: 'Montserrat', sans-serif;
 }
+.glbCont h1{
+    display: flex;
+    justify-content: center;
+}
 
+.glbCont section{
+    margin-left: 100px;
+}
 
+.glbCont li{
+    list-style: none;
+}
 
+.Ct{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.Ct h2{
+    display: flex;
+    justify-content: center;
+}
+    /*TELEFONOS*/
+
+.telf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.telf div{
+    display: flex;
+}
+.telf li{
+    font-size: 24px;
+}
+
+.telf img{
+    width: 70px;
+    height: 70px;
+}
+
+    /*REDES SOCIALES*/
+
+.redessc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.redessc li{
+    margin-bottom: 20px;
+    
+}
+
+.redessc img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+.redessc a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+    /*MAPAS*/
+.visitanos h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.mapas{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-right: 5%;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+
+.mapas iframe{
+    width: 750px;
+    height: 500px;
+}
+
+.mapas p{
+    width: 350px;
+    height: auto;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+.direc p:nth-child(2){
+    font-weight: 400;
+}
 /*EMPIEZA FOOTER*/
 
 footer {
