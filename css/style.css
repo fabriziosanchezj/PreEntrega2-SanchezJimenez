@@ -38,7 +38,7 @@ linear-gradient:
 
 .TitColores{
     display: flex;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .color2Tit{
@@ -166,11 +166,40 @@ nav{
 /* TERMINA INICIO */
 
 /* EMPIZA ¿QUIENES SOMOS? */
-.globQuienesSomos{
+.globQS{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 3%;
     margin-top: 2%;
 }
+
+.margQS h2{
+    font-size: 32px;
+    display: flex;
+}
+.margQS{
+    margin-left: 5%;
+}
+
+.margQS p{
+    margin-left: 2%;
+    font-size: 20px;
+    width: 920px;
+    height: auto
+}
+
+.margQS div:nth-child(1){
+    margin-bottom: 30px;
+}
+.margQS div:nth-child(2){
+    margin-bottom: 30px;
+}
+.margQS div:nth-child(3){
+    margin-bottom: 30px;
+}
+.margQS div:nth-child(4){
+    margin-bottom: 30px;
+}
+
 /* TERMINA ¿QUINES SOMOS? */
 
 /* EMPIEZA SERVICIOS PARA EVENTOS*/
