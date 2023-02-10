@@ -22,6 +22,7 @@ linear-gradient:
 
 */
 
+/*GENERAL*/
 *{
     margin: 0;
     padding: 0;
@@ -36,9 +37,8 @@ linear-gradient:
     display: none;
 }
 
-.TitColores{
+.titColor{
     display: flex;
-    font-size: 24px;
 }
 
 .color2Tit{
@@ -48,6 +48,17 @@ linear-gradient:
 
 .letraAzul{
     color: #26348C;
+}
+.asides{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.asides img{
+    width: 350px;
+    height: 350px;
 }
 
 /* HEADER Y BARRA DE NAV */
@@ -175,6 +186,11 @@ nav{
 .margQS h2{
     font-size: 32px;
     display: flex;
+    align-items: center;
+}
+
+.margQS h2:nth-child(2){
+    color: #26348C;
 }
 .margQS{
     margin-left: 5%;
@@ -183,11 +199,12 @@ nav{
 .margQS p{
     margin-left: 2%;
     font-size: 20px;
-    width: 920px;
+    width: 85%;
     height: auto
 }
 
-.margQS div:nth-child(1){
+
+.margQS div:nth-child(5){
     margin-bottom: 30px;
 }
 .margQS div:nth-child(2){
@@ -200,6 +217,10 @@ nav{
     margin-bottom: 30px;
 }
 
+.margQS p {
+    position:relative;
+    
+}
 /* TERMINA ¿QUINES SOMOS? */
 
 /* EMPIEZA SERVICIOS PARA EVENTOS*/
