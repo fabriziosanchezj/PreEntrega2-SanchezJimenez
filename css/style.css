@@ -39,6 +39,7 @@ linear-gradient:
 
 .titColor{
     display: flex;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .color2Tit{
@@ -152,27 +153,46 @@ nav{
 }
 
     /*TERMINA BANER*/
+    /*CLIENTES*/
+
+.nclientes{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
 .clientes{
     margin-top: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    height: auto;
+    justify-content: center;
 }
-.logosClientes{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.logosClientes li img{
+.clientes img{
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    margin: 50px;
+}
+.clientes ul{
+    display: flex;
+    gap: 80px;
+}
+.clientes li{
+    list-style: none;
+}
+.clientes1{
+    display: flex;
+    align-items: center;
 }
 
+.clientes2{
+    display: none;
+}
+.clientes2:target{
+    display: flex;
+}
 
 /* TERMINA INICIO */
 
@@ -242,6 +262,7 @@ nav{
 .serv{
     margin-top: 15px;
     margin-left: 100px;
+    margin-right: 100px;
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -275,12 +296,13 @@ nav{
 
     .servH li:active .servImgH{
     display: flex;
+
 }
 
 .servImgH{
     display: none;
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     margin-left: 700px;
     position: absolute;
     top: 0;
@@ -292,15 +314,15 @@ nav{
 } 
 .servImgV{
     display: none;
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 500px;
     margin-left: 700px;
     position: absolute;
     top: 0;
 }
 
     /*BORDES DE TITULOS */
-.svc h3{
+.svc h2{
     border-width: thin;
     border-style: solid;
     margin-right: 900px;
