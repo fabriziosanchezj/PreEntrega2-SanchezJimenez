@@ -85,6 +85,7 @@ nav{
     display: flex;
     list-style: none;
     justify-content: center;
+    margin: 0;
 }
 
 .navBar li a{
@@ -107,33 +108,33 @@ nav{
 /* EMPIEZA INICIO */
     /*BANER*/
 
-.slider{
+.sliderX{
     width: 95%;
     margin: auto;
     overflow: hidden;
 }
-.slider ul{
+.sliderX ul{
     padding: 0;
     display: flex;
     width: 300%;
     
     animation: cambio 24s infinite alternate;
 }
-    .slider li{
+    .sliderX li{
     list-style: none;
     width: 100%;
     margin-left: 5%;
     margin-right: 5%;
     }
     
-.slider img{
+.sliderX img{
     width: 100%;
 }
     
     
-.baner{
+.banerX{
     display: flex;
-    background-color: white;
+    background-color: black;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -146,54 +147,50 @@ nav{
     color: white;
     justify-content: center;
     align-items: center;
+}
+
+.esloganInicio h1{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     height: 242px;
-    font-size: 30px;
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
     /*TERMINA BANER*/
     /*CLIENTES*/
 
-.nclientes{
+.nclientes {
     display: flex;
     margin-top: 3%;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 3%;
 }
-.clientes{
-    margin-top: 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+
+.clientes-slider{
     justify-content: center;
-}
-.clientes img{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-.clientes ul{
-    display: flex;
-    gap: 80px;
-}
-.clientes li{
+    gap: 50px;
     list-style: none;
+    margin-bottom: 50px;
 }
-.clientes1{
-    display: flex;
-    align-items: center;
-}
-
-.clientes2{
-    display: none;
-}
-.clientes2:target{
-    display: flex;
+.clientes-slider img{
+    width: 200px;
+    height: 200px;
+    padding: -30px;
 }
 
+.circle50 img{
+    border-radius: 50%;
+}
+.carousel-item{
+    transition: none;
+}
 /* TERMINA INICIO */
 
 /* EMPIZA ¿QUIENES SOMOS? */
@@ -255,6 +252,11 @@ nav{
     align-items: center;
     font-size: 24px;
 }
+
+.serviciosTitulo h2{
+    font-size: 36px;
+    font-weight: 700;
+}
 .serviciosFlex{
     display: flex;
 }
@@ -277,9 +279,6 @@ nav{
     display:none;
 }
 
-.svc{
-    position: relative;
-}
 
 .serv ul{
     margin-left: 30px;
@@ -294,40 +293,59 @@ nav{
 }
     /*  IMG HORIZONTALES */
 
-    .servH li:active .servImgH{
+.servH li:hover .servImgH{
     display: flex;
-
 }
 
 .servImgH{
     display: none;
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     margin-left: 700px;
     position: absolute;
     top: 0;
+    border: black 5px;
+    border-style: solid;
+    padding: 2%;
+    background-color: white;
+    padding-bottom: 5%;
 }
 
     /*  IMG VERTICALES */
-.servV li:active .servImgV{
+.servV li:hover .servImgV{
     display: flex;
 } 
 .servImgV{
     display: none;
-    width: 300px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
     margin-left: 700px;
     position: absolute;
     top: 0;
+    border: black 5px;
+    border-style: solid;
+    padding: 2%;
+    background-color: white;
+    padding-bottom: 5%;
 }
 
     /*BORDES DE TITULOS */
+.svc{
+    position: relative;
+    background-color: transparent;
+    border-bottom: none;
+}
 .svc h2{
     border-width: thin;
     border-style: solid;
     margin-right: 900px;
     border-right-style: none;
     border-left-style: none;
+}
+.accordion-button{
+    font-size: 32px;
+    background-color: transparent;
+    font-weight: 700;
 }
 /* TERMINA SERVICIOS PARA EVENTOS*/
 
@@ -501,10 +519,36 @@ footer {
     font-size: 20px;
     position: relative;
 }
-
-.telefonos li{
-    list-style: none;
+footer p{
+    margin: 0;
 }
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+.telefonos{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+
+}
+.telefonos li{
+    list-style: none;   
+}
+
+/*.telefonos li:nth-child(2){
+    margin-top: -10px;
+}*/
 .redessociales{
     display: flex;
     align-items: center;
