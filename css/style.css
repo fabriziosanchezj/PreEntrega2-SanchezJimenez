@@ -173,11 +173,13 @@ nav{
     margin-bottom: 3%;
 }
 
+.carousel{
+    margin-bottom: 100px;
+}
 .clientes-slider{
     justify-content: center;
     gap: 50px;
     list-style: none;
-    margin-bottom: 50px;
 }
 .clientes-slider img{
     width: 200px;
@@ -191,6 +193,14 @@ nav{
 .carousel-item{
     transition: none;
 }
+
+.carousel-control-next-icon{
+    background-color: #26348C ;
+}
+.carousel-control-prev-icon{
+    background-color: #26348C ;
+}
+
 /* TERMINA INICIO */
 
 /* EMPIZA ¿QUIENES SOMOS? */
@@ -308,7 +318,7 @@ nav{
     border-style: solid;
     padding: 2%;
     background-color: white;
-    padding-bottom: 5%;
+    box-shadow: black 15px 15px 20px;
 }
 
     /*  IMG VERTICALES */
@@ -326,7 +336,7 @@ nav{
     border-style: solid;
     padding: 2%;
     background-color: white;
-    padding-bottom: 5%;
+    box-shadow: black 15px 15px 20px;
 }
 
     /*BORDES DE TITULOS */
