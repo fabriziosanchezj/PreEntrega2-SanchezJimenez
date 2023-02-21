@@ -310,6 +310,7 @@ nav{
     display: flex;
 }
 
+
 .servImgH{
     display: none;
     width: 600px;
@@ -324,6 +325,9 @@ nav{
 
     /*  IMG VERTICALES */
 .servV li:hover .servImgV{
+    display: flex;
+} 
+.servV li:hover .servImgH{
     display: flex;
 } 
 .servImgV{
