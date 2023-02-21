@@ -366,12 +366,17 @@ nav{
 .globalLonas{
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 3%;
-
 }
-
+.globalLonas p{
+    margin-bottom: 0;
+}
 .tituloLonas{
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 5px;
 }
 
 .banerLonas img{
@@ -381,6 +386,9 @@ nav{
 .listaPreciosLonas{
     text-align: center;
     color: #26348C;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 .tablaPreciosLonas{
@@ -405,6 +413,174 @@ nav{
     margin-right: 5%;
     font-weight: 600;
 }
+    /*TABLA DE LONAS*/
+.grid-lonas{
+    display: grid;
+    grid-template-columns: 30% repeat(3,15%);
+    grid-template-rows: repeat(11,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-areas: 
+    "tabla1 tabla2 tabla3 tabla4"
+    "desc1 unid1 precio1 observ1"
+    "desc2 unid2 precio2 ."
+    "desc3 unid3 precio3 ."
+    "desc4 unid4 precio4 ."
+    "desc5 unid5 precio5 ."
+    "desc6 unid6 precio6 ."
+    "desc7 precio7 precio7 observ2"
+    ". . . ."
+    "desc8 precio8 precio8 ."
+    "desc9 precio8 precio8 ."
+
+    ;
+} 
+.grid-lonas h3{
+    font-size: 18.8px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: normal;
+}
+.grid-lonas div{
+    line-height: normal;
+}
+
+        /*DESCRIPCIÓN*/
+.tabla1{
+    grid-area: tabla1;
+    justify-self: center;
+}
+.desc1{
+    grid-area: desc1;
+    justify-self: center;
+    text-align: center;
+}
+.desc2{
+    grid-area: desc2;
+    justify-self: center;
+    text-align: center;
+}
+.desc3{
+    grid-area: desc3;
+    justify-self: center;
+    text-align: center;
+}
+.desc4{
+    grid-area: desc4;
+    justify-self: center;
+    text-align: center;
+}
+.desc5{
+    grid-area: desc5;
+    justify-self: center;
+    text-align: center;
+}
+.desc6{
+    grid-area: desc6;
+    justify-self: center;
+    text-align: center;
+}
+.desc7{
+    grid-area: desc7;
+    justify-self: center;
+    text-align: center;
+}
+.desc8{
+    grid-area: desc8;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.desc9{
+    grid-area: desc9;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+        /* UNIDAD */
+.tabla2{
+    grid-area: tabla2;
+    justify-self: center;
+}
+.unid1{
+    grid-area: unid1;
+    justify-self: center;
+}
+.unid2{
+    grid-area: unid2;
+    justify-self: center;
+}
+.unid3{
+    grid-area: unid3;
+    justify-self: center;
+}
+.unid4{
+    grid-area: unid4;
+    justify-self: center;
+}
+.unid5{
+    grid-area: unid5;
+    justify-self: center;
+}
+.unid6{
+    grid-area: unid6;
+    justify-self: center;
+}
+        /* PRECIO */
+.tabla3{
+    grid-area: tabla3;
+    justify-self: center;
+}
+.precio1{
+    grid-area: precio1;
+    justify-self: center;
+}
+.precio2{
+    grid-area: precio2;
+    justify-self: center;
+}
+.precio3{
+    grid-area: precio3;
+    justify-self: center;
+}
+.precio4{
+    grid-area: precio4;
+    justify-self: center;
+}
+.precio5{
+    grid-area: precio5;
+    justify-self: center;
+}
+.precio6{
+    grid-area: precio6;
+    justify-self: center;
+}
+.precio7{
+    grid-area: precio7;
+    justify-self: center;
+}
+.precio8{
+    grid-area: precio8;
+    justify-self: center;
+    align-self: center;
+}
+
+        /* OBSERVACIONES */
+.tabla4{
+    grid-area: tabla4;
+    justify-self: center;
+}
+.observ1{
+    grid-area: observ1;
+    justify-self: center;
+}
+.observ2{
+    grid-area: observ2;
+    justify-self: center;
+}
+
 /* TERMINA LONAS */
 
 /*EMPIEZA CONTACTANOS*/
@@ -502,7 +678,6 @@ nav{
     display: grid;
     align-items: center;
     justify-self: center;
-    width: 90%;
     gap: 50px 15px;
     grid-template: repeat(2,1fr) / 50% 50%;
     grid-template-areas: 
