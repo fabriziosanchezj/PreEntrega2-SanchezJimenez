@@ -822,6 +822,10 @@ footer h3{
 
 /* TABLET*/
 @media(max-width:792px){
+
+    p{
+        margin: 0;
+    }
         /*BARRA DE NAVEGACIÓN*/
     .navbar-desktop{
         display: none;
@@ -830,11 +834,14 @@ footer h3{
     header{
         background-color: #26348C;
         width:100%;
+        padding-right: 20px;
+    }
+    nav{
+        margin-right: 0;
     }
     .navbar-tablet{
         display: flex;
         background-color: #26348C;
-        width: 100%;
         padding: 0;
         height: auto;
     }
@@ -847,14 +854,42 @@ footer h3{
         background-color: white;
         color: white;
     }
+    .nav-link{
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+    }
     .offcanvas{
-        background-color: #26348C;
         color: white;
     }
-    .nav-link{
-        color: white;
-        font-size: 20px;
-        font-weight: 600;
+
+    .offcanvas-header {
+    border-bottom: solid white 5px;
+    text-align: center;
+    background-color: #26348C;
+    }
+    .offcanvas-title {
+        text-align: center;
+        font-size: 30px;
+    }
+    .offcanvas-body{
+    background-color: rgb(212, 210, 210);
+    padding-top: 0;
+    }
+    .offcanvas-body ul{
+        padding-right: 0;
+    }
+
+    .offcanvas-body li{
+        border-style: solid;
+        border-bottom: white;
+        border-left: none;
+        border-right: none;
+    }
+    .offcanvas-body li:first-child{
+        border: none;
     }
     .nav-item{
         border-style: solid;
@@ -863,12 +898,11 @@ footer h3{
         border-left: none;
         border-right: none;
     }
-    .offcanvas-body{
-        color: white;
-    }
+
 
     .active{
         color: white;
+        font-weight: 700;
     }
     /*TERMINA BARRA DE NAVEGACION*/
     /* EMPIEZA INDEX*/
@@ -905,6 +939,37 @@ footer h3{
         gap: 50px;
     }
     /*TERMINA INICIO*/
+
+    /*EMPIEZA QUIENES SOMOS*/
+    .margQS{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .QSflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .margQS p{
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    .titColor {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .asides img{
+        width: 250px;
+        height: 250px;
+    }
     /*  EMPIEZA CONTACTANOS*/
     .grid-mapas{
         display: flex;
@@ -946,4 +1011,27 @@ footer h3{
     height: 40px;
     }
 
+}
+
+@media (max-width:320px){
+    .margQS h2{
+        font-size: 24px;
+    }
+
+    .margQS p{
+        font-size: 12px;
+    }
+
+
+    .asides img{
+        width: 100px;
+        height: 100px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 }
