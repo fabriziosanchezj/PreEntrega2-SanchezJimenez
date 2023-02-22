@@ -87,6 +87,10 @@ nav{
     justify-content: center;
     margin: 0;
 }
+.navBar li{
+    display: flex;
+    align-items: center;
+}
 
 .navBar li a{
     text-decoration: none;
@@ -96,6 +100,10 @@ nav{
     font-weight: 700;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .navBar li a:hover {
@@ -790,7 +798,8 @@ footer h3{
 
 }
 .telefonos li{
-    list-style: none;   
+    list-style: none;
+    text-align: center;   
 }
 
 /*.telefonos li:nth-child(2){
@@ -817,6 +826,148 @@ footer h3{
     width: 50px;
 }
 
+@media(max-width:1270px){
+    /*BARRA NAV*/
+    .navBar li a{
+        font-size: 20px;
+    }
+
+    /*INDEX*/
+    .esloganInicio{
+        height: 180px;
+        width: 100%;
+    }
+    .esloganInicio h1{
+        font-size: 36px;
+    }
+
+    .nclientes{
+        font-size: 32px;
+    }
+    .sliderX ul{
+        margin-bottom: 0;
+    }
+    .carousel{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .carousel-item img{
+        width:180px;
+        height: 180px;
+    }
+    .clientes-slider{
+        gap: 40px;
+    }
+/*      QS*/
+
+/*FOOTER*/
+
+    .foot-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center ;
+    }
+    .foot-sect p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .foot-sect h3{
+        font-size: 18px;
+    }
+    .telefonos li{
+        font-size: 16px;
+    }
+    .redessociales{
+        padding: 0;
+    }
+
+}
+
+@media(max-width:1029px){
+    /*BARRA NAV*/
+
+    .navBar li a{
+        font-size: 16px;
+    }
+
+    /*INDEX*/
+    .esloganInicio{
+        height: 150px;
+        width: 100%;
+    }
+    .esloganInicio h1{
+        font-size: 36px;
+    }
+
+    .nclientes{
+        font-size: 32px;
+    }
+
+    .carousel{
+        margin-bottom: 50px;
+    }
+
+    .carousel-item img{
+        width:120px;
+        height: 120px;
+    }
+    .clientes-slider{
+        gap: 30px;
+    }
+/*      QS*/
+.margQS{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.QSflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.margQS p{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+.titColor {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.asides img{
+    width: 250px;
+    height: 250px;
+}
+/*FOOTER*/
+    .foot-sect h3{
+        font-size: 16px;
+    }
+    .foot-sect p{
+        font-size: 12px;
+    }
+    .telefonos li{
+        font-size: 12px;
+    }
+    .logoRedSoc{
+        height: 30px;
+        width: 30px;
+    }
+    .logoMSN{
+        height: 30px;
+        width: 30px;
+    }
+
+}
 
 
 
@@ -913,6 +1064,8 @@ footer h3{
     }
     .esloganInicio h1{
         font-size: 32px;
+        width: 80%;
+        text-align: center;
     }
 
     .nclientes{
@@ -941,34 +1094,16 @@ footer h3{
     /*TERMINA INICIO*/
 
     /*EMPIEZA QUIENES SOMOS*/
-    .margQS{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .margQS h2{
+        font-size: 28px;
     }
-    .QSflex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .margQS p{
-        text-align: center;
-        font-size: 16px;
-        margin: 0;
-    }
-    .titColor {
-        margin: 0;
-        display: flex;
-        flex-direction: row;
+        font-size: 14px;
     }
 
     .asides img{
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
     }
     /*  EMPIEZA CONTACTANOS*/
     .grid-mapas{
@@ -994,25 +1129,159 @@ footer h3{
         font-size: 18px;
     }
     footer div:first-child{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     justify-self: center;
     }
     footer div:nth-child(3){
     margin-right: 1%;
     }
     .logoRedSoc{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     }
 
     .logoMSN{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     }
 
 }
 
+@media(max-width:720px){
+    /*INDEX*/
+    .esloganInicio{
+        height: 150px;
+        width: 100%;
+    }
+    .esloganInicio h1{
+        font-size: 24px;
+    }
+
+    .nclientes{
+        font-size: 24px;
+    }
+
+    .carousel{
+        margin-bottom: 30px;
+    }
+
+    .carousel-item img{
+        width:100px;
+        height: 100px;
+    }
+    .clientes-slider{
+        gap: 30px;
+    }
+}
+@media(max-width:600px){
+    /*INDEX*/
+
+    .nclientes{
+        font-size: 20px;
+    }
+
+    .carousel-item img{
+        width:80px;
+        height: 80px;
+    }
+    .clientes-slider{
+        gap: 25px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot-sect:nth-child(2){
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .foot-sect:nth-child(3){
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }   
+    .foot-sect h3{
+        font-size: 14px;
+    }
+    .foot-sect p{
+        font-size: 12px;
+    }
+    .telefonos li{
+        font-size: 10px;
+    }
+    .logoRedSoc{
+        height: 20px;
+        width: 20px;
+    }
+    .logoMSN{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media(max-width:500px){
+    /*INDEX*/
+    .esloganInicio{
+        height: 100px;
+        width: 100%;
+    }
+    .esloganInicio h1{
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .nclientes{
+        font-size: 18px;
+    }
+
+    .carousel-item img{
+        width:50px;
+        height: 50px;
+    }
+    .clientes-slider{
+        gap: 20px;
+    }
+    /*qs*/
+    .margQS h2{
+        font-size: 24px;
+    }
+    .margQS p{
+        font-size: 10px;
+    }
+
+    .asides img{
+        width: 120px;
+        height: 120px;
+    }
+    /*footer*/
+    .foot-sect h3{
+        font-size: 14px;
+    }
+    .foot-sect p{
+        font-size: 12px;
+    }
+    .telefonos li{
+        font-size: 10px;
+    }
+    .logoRedSoc{
+        height: 20px;
+        width: 20px;
+    }
+    .logoMSN{
+        height: 20px;
+        width: 20px;
+    }
+}
 @media (max-width:320px){
     /*BARRA DE NAV*/
     header{
@@ -1043,7 +1312,10 @@ footer h3{
     }
 
     .nclientes{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .carousel{
+        margin-bottom: 0px;
     }
     .carousel-inner{
         width: 100%;
@@ -1085,45 +1357,29 @@ footer h3{
         flex-direction: column;
         align-items: center;
     }
-    footer h3{
-        text-align: center;
+
+    .foot-sect:nth-child(2){
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .foot-sect:nth-child(3){
+        margin-bottom: 20px;
+    }
+    .foot-sect h3{
         font-size: 12px;
     }
-    footer p{
+    .foot-sect p{
         font-size: 10px;
     }
-    footer li{
+    .telefonos li{
         font-size: 10px;
-    }
-    footer div:first-child{
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-self: center;
-    }
-    footer div:nth-child(3){
-    margin-right: 1%;
-    margin-bottom: 3%;
-    }
-    .redessociales{
-        display: flex;
-        padding: 0;
-        gap: 0;
-        margin-right: 0;
-    }
-    .foot-sect{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 0;
-        justify-content: center;
     }
     .logoRedSoc{
-    width: 25px;
-    height: 25px;
+        height: 25px;
+        width: 25px;
     }
-
     .logoMSN{
-    width: 25px;
-    height: 25px;
+        height: 25px;
+        width: 25px;
     }
 }
