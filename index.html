@@ -13,17 +13,63 @@
     <!-- AQUI EMPIEZA EL HEADER -->
 
     <header>
-        <a href="./index.html"><img class="logo" src="./assets/img/logo-felix.png" alt="logo-felix-eventos"></a>
-    <nav>
-            <ul class="navBar">
-                <li ><a href="./index.html">Inicio</a></li>
-                <li ><a href="./html/quienes-somos.html">¿Quienes somos?</a></li>
-                <li ><a href="./html/servicio-para-eventos.html">Servicios para eventos</a></li>
-                <li ><a href="./html/impresion-y-ploteo-de-lonas.html">Impresión y ploteo de lonas</a></li>
-                <li ><a href="./html/contactanos.html">Contactános</a></li>
-            </ul>
-    </nav>
-</header>
+        <section class="navbar-desktop">
+            <div>
+                <a  href="./index.html"><img class="logo" src="./assets/img/logo-felix.png" alt="logo-felix-eventos"></a>
+            </div>
+            <nav>
+                    <ul class="navBar">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./html/quienes-somos.html">¿Quienes somos?</a></li>
+                        <li><a href="./html/servicio-para-eventos.html">Servicios para eventos</a></li>
+                        <li><a href="./html/impresion-y-ploteo-de-lonas.html">Impresión y ploteo de lonas</a></li>
+                        <li><a href="./html/contactanos.html">Contactános</a></li>
+                    </ul>
+            </nav>
+        </section>
+
+
+        <!-- BARRA DE NAVEGACIÓN DE TABLET Y MOVILES -->
+        <section class="navbar-tablet">
+            <nav class="navbar bg-body-tertiary fixed-top navbar-tablet">
+                <div class="container-fluid">
+                    <div >
+                        <a  href="./index.html"><img class="logo" src="./assets/img/logo-felix.png" alt="logo-felix-eventos"></a>                    </div>
+                <!-- MENU HAMBURGUESA -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <!-- DESPLIEGUE DE MENÚ -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <!-- SECCIONES DEL MENÚ -->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active"  href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./html/quienes-somos.html">¿Quienes somos?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./html/servicio-para-eventos.html">Servicios para eventos</a>
+                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/impresion-y-ploteo-de-lonas.html">Impresión de lonas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contactanos.html">Contáctanos</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
 
     <!-- AQUI EMPIEZA EL MAIN -->
 

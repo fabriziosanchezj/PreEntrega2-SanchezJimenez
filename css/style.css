@@ -103,6 +103,19 @@ nav{
     text-decoration-color: white;
     font-size: 21px;
 }
+
+.navbar-desktop{
+    background-color: #26348C;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-tablet{
+    display: none;
+}
+
 /* TERMINA BARRA DE NAV */
 
 /* EMPIEZA INICIO */
@@ -117,6 +130,7 @@ nav{
     padding: 0;
     display: flex;
     width: 300%;
+    margin-bottom: 0;
     
     animation: cambio 24s infinite alternate;
 }
@@ -178,8 +192,9 @@ nav{
 }
 .clientes-slider{
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
     list-style: none;
+    padding-left: 0;
 }
 .clientes-slider img{
     width: 200px;
@@ -800,4 +815,135 @@ footer h3{
 .logoMSN{
     margin-left: -40px;
     width: 50px;
+}
+
+
+
+
+/* TABLET*/
+@media(max-width:792px){
+        /*BARRA DE NAVEGACIÓN*/
+    .navbar-desktop{
+        display: none;
+    }
+    
+    header{
+        background-color: #26348C;
+        width:100%;
+    }
+    .navbar-tablet{
+        display: flex;
+        background-color: #26348C;
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
+    .container-fluid{
+        width: 100%;
+        margin-left: 0;
+        background-color: #26348C;
+    }
+    .navbar button {
+        background-color: white;
+        color: white;
+    }
+    .offcanvas{
+        background-color: #26348C;
+        color: white;
+    }
+    .nav-link{
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .nav-item{
+        border-style: solid;
+        border-bottom: white;
+        border-top: white;
+        border-left: none;
+        border-right: none;
+    }
+    .offcanvas-body{
+        color: white;
+    }
+
+    .active{
+        color: white;
+    }
+    /*TERMINA BARRA DE NAVEGACION*/
+    /* EMPIEZA INDEX*/
+
+    .esloganInicio{
+        height: 150px;
+        width: 100%;
+    }
+    .esloganInicio h1{
+        font-size: 32px;
+    }
+
+    .nclientes{
+        font-size: 24px;
+    }
+    .sliderX ul{
+        margin-bottom: 0;
+    }
+    .carousel{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .carousel-inner{
+        width: 100%;
+    }
+    .carousel-item img{
+        width:110px;
+        height: 110px;
+    }
+    .clientes-slider{
+        padding-left: 0;
+        gap: 50px;
+    }
+    /*TERMINA INICIO*/
+    /*  EMPIEZA CONTACTANOS*/
+    .grid-mapas{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        width: 100%;
+    }
+    .mapa1{
+    display: flex ;
+    }
+
+/*EMPIEZA FOOTER*/
+    footer{
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    }
+
+    footer h3{
+        text-align: center;
+        font-size: 18px;
+    }
+    footer div:first-child{
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-self: center;
+    }
+    footer div:nth-child(3){
+    margin-right: 1%;
+    }
+    .logoRedSoc{
+    width: 40px;
+    height: 40px;
+    }
+
+    .logoMSN{
+    width: 40px;
+    height: 40px;
+    }
+
 }
