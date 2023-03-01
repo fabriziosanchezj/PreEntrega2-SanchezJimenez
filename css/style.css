@@ -699,8 +699,8 @@ nav{
 .grid-mapas{
     display: grid;
     align-items: center;
-    justify-self: center;
-    width: 90%;
+    justify-content: center;
+    width: 100%;
     gap: 50px 15px;
     grid-template: repeat(2,1fr) / 50% 50%;
     grid-template-areas: 
@@ -708,7 +708,9 @@ nav{
     "direc2 mapa2"
     ;
 }
-
+.grid-mapas iframe{
+    justify-self: center;
+}
 .direc1{
     grid-area: direc1;
     justify-self: center;
@@ -718,7 +720,8 @@ nav{
     height: auto;
     font-weight: 700;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 .direc1 p{
     margin-bottom: 0;
@@ -738,7 +741,8 @@ nav{
     height: auto;
     font-weight: 700;
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 .direc2 p{
     margin-bottom: 0;
@@ -752,12 +756,12 @@ nav{
 
 .mapa1{
     grid-area: mapa1;
-    width: 750px;
+    width: 630px;
     height: 500px;
 }
 .mapa2{
     grid-area: mapa2;
-    width: 750px;
+    width: 630px;
     height: 500px;
 }
 /*EMPIEZA FOOTER*/
@@ -826,6 +830,8 @@ footer h3{
     width: 50px;
 }
 
+
+
 @media(max-width:1270px){
     /*BARRA NAV*/
     .navBar li a{
@@ -862,6 +868,58 @@ footer h3{
         gap: 40px;
     }
 /*      QS*/
+/*CONTACTANOS */
+.Ct h2{
+    font-size: 24px;
+}
+    /*TELEFONOS*/
+
+.telf li{
+    font-size: 20px;
+}
+
+.telf img{
+    width: 50px;
+    height: 50px;
+}
+
+    /*REDES SOCIALES*/
+
+.redessc{
+    font-size: 20px;
+}
+
+.redessc li{
+    margin-bottom: 20px;
+}
+
+.redessc img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+    /*MAPAS*/
+
+.visit1{
+    font-size: 24px;
+}
+
+.mapa1{
+    width: 500px;
+    height: 400px;
+}
+.mapa2{
+    width: 500px;
+    height: 400px;
+}
+
+.direc1{
+    font-size: 18px;
+}
+.direc2{
+    font-size: 18px;
+}
 
 /*FOOTER*/
 
@@ -886,7 +944,16 @@ footer h3{
     }
 
 }
-
+@media (max-width:1130px) {
+    .mapa1{
+        width: 400px;
+        height: 350px;
+    }
+    .mapa2{
+        width: 400px;
+        height: 350px;
+    }
+}
 @media(max-width:1029px){
     /*BARRA NAV*/
 
@@ -948,6 +1015,61 @@ footer h3{
     width: 250px;
     height: 250px;
 }
+
+/*CONTACTANOS */
+.glbCont h1{
+    font-size: 30px;
+}
+.Ct h2{
+    font-size: 20px;
+}
+    /*TELEFONOS*/
+
+.telf li{
+    font-size: 16px;
+}
+
+.telf img{
+    width: 40px;
+    height: 40px;
+}
+
+    /*REDES SOCIALES*/
+
+.redessc{
+    font-size: 16px;
+}
+
+.redessc img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+.redessc li{
+    font-size: 16px;
+}
+
+    /*MAPAS*/
+
+.visit1{
+    font-size: 24px;
+}
+
+.mapa1{
+    width: 375px;
+    height: 350px;
+}
+.mapa2{
+    width: 375px;
+    height: 350px;
+}
+
+.direc1{
+    font-size: 18px;
+}
+.direc2{
+    font-size: 18px;
+}
 /*FOOTER*/
     .foot-sect h3{
         font-size: 16px;
@@ -968,8 +1090,22 @@ footer h3{
     }
 
 }
-
-
+@media (max-width:850px) {
+    .Ct h2{
+        font-size: 18px;
+    }
+    .redessc{
+        font-size: 14px;
+    }
+    .mapa1{
+        width: 300px;
+        height: 300px;
+    }
+    .mapa2{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 /* TABLET*/
 @media(max-width:792px){
@@ -1113,8 +1249,21 @@ footer h3{
         justify-content: center;
         width: 100%;
     }
+    .direc1{
+        margin-right: 20px;
+    }
+    .direc2{
+        margin-right: 20px;
+    }
     .mapa1{
-    display: flex ;
+        display: flex ;
+        width: 90%;
+        height: 500px;
+    }
+    .mapa2{
+        display: flex;
+        width: 90%;
+        height: 500px;
     }
 
 /*EMPIEZA FOOTER*/
@@ -1172,6 +1321,99 @@ footer h3{
     }
     .clientes-slider{
         gap: 30px;
+    }
+    .glbCont h1{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+    /*CONTACTANOS*/ 
+
+    .Ct h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .Ct{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        width: 100%;
+        gap: 10px 0px;
+        margin: 0;
+        margin-top: 20px;
+        grid-template: 150px 100px / repeat(4,20%);
+        grid-template-areas: 
+        "telf telf grid-red grid-red"
+        ". grid-mail grid-mail ."
+        ;
+    }
+    .telf{
+        grid-area: telf;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .grid-mail{
+        grid-area: grid-mail;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-red{
+        grid-area: grid-red;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        /*TELEFONOS*/
+    .telf div{
+        display: flex;
+    }
+    .telf li{
+        font-size: 14px;
+    }
+    
+    .telf img{
+        width: 40px;
+        height: 40px;
+    }
+    
+        /*REDES SOCIALES*/
+    
+    .redessc{
+        font-size: 14px;
+    }
+    .redessc li a{
+        display: flex;
+        justify-content: center;
+        justify-self:center;
+    }
+    
+    .redessc li{
+        margin-bottom: 5px;
+        justify-self: center;
+        font-size: 14px;
+    }
+    .redessc img{
+        width: 30px;
+        height: 30px;
+    }
+    .visit1{
+        text-align: center;
+        font-size: 22px;
+    }
+    .direc1{
+        font-size: 14px;
+    }
+    .direc2{
+        font-size: 14px;
     }
 }
 @media(max-width:600px){
@@ -1263,6 +1505,17 @@ footer h3{
         width: 120px;
         height: 120px;
     }
+    /* CONTACTANOS*/
+    .glbCont h1{
+        font-size: 22px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .visit1{
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     /*footer*/
     .foot-sect h3{
         font-size: 14px;
@@ -1281,6 +1534,14 @@ footer h3{
         height: 20px;
         width: 20px;
     }
+}
+@media (max-width:440px){
+    .Ct{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
 }
 @media (max-width:320px){
     /*BARRA DE NAV*/
