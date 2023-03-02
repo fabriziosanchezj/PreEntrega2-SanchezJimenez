@@ -333,7 +333,6 @@ nav{
     display: flex;
 }
 
-
 .servImgH{
     display: none;
     width: 600px;
@@ -343,8 +342,17 @@ nav{
     top: 0; 
     border: black solid 2px;
     box-shadow: rgb(192, 190, 190) 15px 15px 10px;
+
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
 }
 
+.servImgH:hover{
+    transform: scale3d(1.1, 1.1, 0.3);
+    -webkit-transform: scale3d(1.1, 1.1, 0.3);
+    -moz-transform: scale3d(1.1, 1.1, 0.3);
+    }
 
     /*  IMG VERTICALES */
 .servV li:hover .servImgV{
@@ -362,8 +370,17 @@ nav{
     top: 0;
     border: black solid 2px;
     box-shadow: rgb(192, 190, 190) 15px 15px 10px;
+
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
 }
 
+.servImgV:hover{
+    transform: scale3d(1.1, 1.1, 0.3);
+    -webkit-transform: scale3d(1.1, 1.1, 0.3);
+    -moz-transform: scale3d(1.1, 1.1, 0.3);
+    }
     /*BORDES DE TITULOS */
 .svc{
     position: relative;
