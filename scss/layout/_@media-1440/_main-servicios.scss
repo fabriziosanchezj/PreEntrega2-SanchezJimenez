@@ -1,0 +1,101 @@
+/*INICIA SERVICIOS*/
+.globServicios{
+    font-family: $font;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    h1{
+        display: none;
+    }
+    > div{
+        @include centrado-full;
+        flex-direction: column;
+        font-size: 24px;
+        
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+
+            &:nth-child(2){
+                color: $main-color;
+            }
+        }
+    }
+    section{
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .servMostrar {
+            display:none;
+        }
+
+        .servImgH{
+            @include img-servicios;
+            width: 600px;
+            height: 400px;
+            @include grow;
+        }
+        
+        .servImgV{
+            @include img-servicios;
+            width: 400px;
+            height: 600px;
+            @include grow;
+        }
+
+        >div{
+            position: relative;
+            background-color: transparent;
+            border-bottom: none;
+            div{
+                .servH{
+                    & li:hover .servImgH{
+                        display: flex;
+                    }
+                    & li:hover .servImgV{
+                    display: flex;
+                }
+            }
+                .servV{
+                    & li:hover .servImgH{
+                        display: flex;
+                    }
+                    & li:hover .servImgV{
+                    display: flex;
+                }
+                }
+            }
+
+            button{
+            font-size: 32px;
+            background-color: transparent;
+            font-weight: 700;
+            }
+
+            h2{
+                border-width: thin;
+                border-style: solid;
+                margin-right: 900px;
+                border-right-style: none;
+                border-left-style: none;
+            }
+        }
+
+        ul{
+            margin-left: 30px;
+            list-style-type: none;
+        }
+        li:hover{
+            color: #26348C;
+            font-weight: 700;
+            cursor: pointer;
+
+        }
+    }
+}
+
+/*FIN DE SERVICIOS*/
