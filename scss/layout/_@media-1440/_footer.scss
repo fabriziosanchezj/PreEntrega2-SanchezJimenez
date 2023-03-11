@@ -29,6 +29,16 @@ footer{
             li{
                 list-style: none;
                 text-align: center; 
+                
+                &:hover{
+                    @include grow;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                }
+
             }
         }
     }
@@ -67,4 +77,5 @@ footer{
         justify-content: center;
     }
 }
+
 /*FIN DE FOOTER*/

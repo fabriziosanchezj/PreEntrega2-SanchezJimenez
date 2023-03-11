@@ -11,6 +11,21 @@
     font-family: $font;
 }
 
+@mixin h1-1024{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: $font;
+}
+@mixin h1-768{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: $font;
+}
+@mixin h1-425{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font;
+}
 @mixin h2{
     font-size: 32px;
     font-weight: 700;
@@ -86,4 +101,9 @@
 @mixin mapa{
     width: 630px;
     height: 500px;
+}
+
+@mixin mapa-1024{
+    width: 400px;
+    height: 400px;
 }
