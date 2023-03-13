@@ -1613,18 +1613,30 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center; }
-  .servH {
-    height: 340px; }
   .accordion-header {
     height: 60px; }
+  .accordion > div:first-child div {
+    height: 350px; }
   .accordion > div:first-child img {
     margin-top: 230px; }
+  .accordion > div:nth-child(2) div {
+    height: 320px; }
   .accordion > div:nth-child(2) img {
     margin-top: 200px; }
+  .accordion > div:nth-child(3) div {
+    height: 250px; }
   .accordion > div:nth-child(3) img {
-    margin-top: 150px; }
+    margin-top: 140px; }
+  .accordion > div:nth-child(4) div {
+    height: 240px; }
   .accordion > div:nth-child(4) img {
-    margin-top: 160px; }
+    margin-top: 120px; }
+  .accordion > div:nth-child(5) div {
+    height: 360px; }
+  .accordion > div:nth-child(5) img {
+    margin-top: 260px; }
+  .accordion > div:nth-child(6) div {
+    height: 350px; }
   .accordion > div:nth-child(6) img {
     margin-top: 200px; } }
 
@@ -1833,94 +1845,10 @@ footer {
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
 @media (max-width: 375px) {
-  .globServicios {
-    margin-bottom: 8%; }
-    .globServicios > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column; }
-      .globServicios > div h2 {
-        font-size: 20px; }
-        .globServicios > div h2:first-child {
-          margin-top: 5%;
-          margin-bottom: 0; }
-      .globServicios > div p {
-        font-size: 14px; }
-    .globServicios section {
-      margin-top: 15px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: 16px; }
-      .globServicios section .servImgH {
-        display: none;
-        position: absolute;
-        justify-self: center;
-        margin-left: -30px;
-        border: black solid 2px;
-        box-shadow: none;
-        z-index: 1;
-        align-self: end;
-        top: 0;
-        margin-top: 260px;
-        width: 100%;
-        height: 200px; }
-        .globServicios section .servImgH:hover {
-          transform: none;
-          -webkit-transform: none;
-          -moz-transform: none; }
-      .globServicios section .servImgV {
-        display: none;
-        position: absolute;
-        justify-self: center;
-        margin-left: -30px;
-        border: black solid 2px;
-        box-shadow: none;
-        z-index: 1;
-        align-self: end;
-        top: 0;
-        margin-top: 260px;
-        width: 350px;
-        height: 400px; }
-        .globServicios section .servImgV:hover {
-          transform: none;
-          -webkit-transform: none;
-          -moz-transform: none; }
-      .globServicios section > div {
-        position: relative;
-        background-color: transparent;
-        border-bottom: none; }
-        .globServicios section > div button {
-          font-size: 20px; }
-        .globServicios section > div h2 {
-          margin-right: 900px;
-          width: 100%; }
-      .globServicios section ul {
-        padding-left: 30px;
-        margin-left: 0;
-        margin-bottom: 200px; }
-  .banServ {
-    height: 200px; }
-  .accordion-collapse {
-    height: 200px;
-    margin-bottom: 200px; }
-    .accordion-collapse img {
-      display: flex;
-      align-items: flex-end; }
-  .tracking-in-expand-fwd {
-    font-size: 32px;
-    position: absolute;
-    top: 125px;
-    left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .servH {
-    height: 200px; }
-  .accordion-header {
-    height: 60px; } }
+  .globServicios > div h2 {
+    font-size: 18px; }
+  .globServicios > div p {
+    font-size: 12px; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
@@ -2126,94 +2054,10 @@ footer {
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
 @media (max-width: 320px) {
-  .globServicios {
-    margin-bottom: 8%; }
-    .globServicios > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column; }
-      .globServicios > div h2 {
-        font-size: 20px; }
-        .globServicios > div h2:first-child {
-          margin-top: 5%;
-          margin-bottom: 0; }
-      .globServicios > div p {
-        font-size: 14px; }
-    .globServicios section {
-      margin-top: 15px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: 16px; }
-      .globServicios section .servImgH {
-        display: none;
-        position: absolute;
-        justify-self: center;
-        margin-left: -30px;
-        border: black solid 2px;
-        box-shadow: none;
-        z-index: 1;
-        align-self: end;
-        top: 0;
-        margin-top: 260px;
-        width: 100%;
-        height: 200px; }
-        .globServicios section .servImgH:hover {
-          transform: none;
-          -webkit-transform: none;
-          -moz-transform: none; }
-      .globServicios section .servImgV {
-        display: none;
-        position: absolute;
-        justify-self: center;
-        margin-left: -30px;
-        border: black solid 2px;
-        box-shadow: none;
-        z-index: 1;
-        align-self: end;
-        top: 0;
-        margin-top: 260px;
-        width: 350px;
-        height: 400px; }
-        .globServicios section .servImgV:hover {
-          transform: none;
-          -webkit-transform: none;
-          -moz-transform: none; }
-      .globServicios section > div {
-        position: relative;
-        background-color: transparent;
-        border-bottom: none; }
-        .globServicios section > div button {
-          font-size: 20px; }
-        .globServicios section > div h2 {
-          margin-right: 900px;
-          width: 100%; }
-      .globServicios section ul {
-        padding-left: 30px;
-        margin-left: 0;
-        margin-bottom: 200px; }
-  .banServ {
-    height: 200px; }
-  .accordion-collapse {
-    height: 200px;
-    margin-bottom: 200px; }
-    .accordion-collapse img {
-      display: flex;
-      align-items: flex-end; }
-  .tracking-in-expand-fwd {
-    font-size: 32px;
-    position: absolute;
-    top: 125px;
-    left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-  .servH {
-    height: 200px; }
-  .accordion-header {
-    height: 60px; } }
+  .globServicios > div h2 {
+    font-size: 16px; }
+  .globServicios > div p {
+    font-size: 11px; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
