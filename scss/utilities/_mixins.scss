@@ -48,6 +48,42 @@
     border: black solid 2px;
     box-shadow: rgb(192, 190, 190) 15px 15px 10px;
 }
+@mixin img-servicios-1024{
+    display: none;
+    margin-left: 350px;
+    position: absolute;
+    top: 0; 
+    border: black solid 2px;
+    box-shadow: rgb(192, 190, 190) 15px 15px 10px;
+}
+@mixin img-servicios-768{
+    display: none;
+    margin-left: 280px;
+    position: absolute;
+    top: 0; 
+    border: black solid 2px;
+    box-shadow: rgb(192, 190, 190) 15px 15px 10px;
+    
+}
+@mixin img-servicios-425{
+    display: none;
+    position: absolute;
+    justify-self: center;
+    margin-left: -$img-serv-responsive;
+    border: black solid 2px;
+    box-shadow: none;
+    z-index: 1;
+    align-self: end;
+    top: 0;
+    margin-top: $height-img-serv+$accordion-header-height;
+
+    &:hover{
+        transform: none;
+        -webkit-transform: none; 
+        -moz-transform: none;
+    }
+    
+}
 
 @mixin grid-item-lonas{
     justify-self: center;

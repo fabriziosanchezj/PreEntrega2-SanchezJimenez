@@ -242,6 +242,9 @@
     text-align: center;
     flex-direction: column;
     font-size: 24px; }
+    .globServicios > div p {
+      margin-left: 5%;
+      margin-right: 5%; }
     .globServicios > div h2 {
       font-size: 36px;
       font-weight: 700; }
@@ -337,8 +340,8 @@
   color: white;
   font-size: 64px;
   position: absolute;
-  top: 250px;
   left: 20%;
+  top: 250px;
   z-index: 2;
   -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
@@ -857,119 +860,78 @@ footer {
 
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
-.globServicios {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 8%;
-  /*h1{
+@media (max-width: 1024px) {
+  .globServicios {
+    margin-bottom: 8%; }
+    .globServicios > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .globServicios > div h2 {
+        font-size: 28px; }
+      .globServicios > div p {
+        font-size: 18px;
+        margin-left: 5%;
+        margin-right: 5%; }
+    .globServicios section {
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 20px; }
+      .globServicios section .servImgH {
         display: none;
-    }*/ }
-  .globServicios > div {
+        margin-left: 350px;
+        position: absolute;
+        top: 0;
+        border: black solid 2px;
+        box-shadow: #c0bebe 15px 15px 10px;
+        width: 500px;
+        height: 300px; }
+      .globServicios section .servImgV {
+        display: none;
+        margin-left: 350px;
+        position: absolute;
+        top: 0;
+        border: black solid 2px;
+        box-shadow: #c0bebe 15px 15px 10px;
+        width: 400px;
+        height: 600px; }
+      .globServicios section > div {
+        position: relative;
+        background-color: transparent;
+        border-bottom: none; }
+        .globServicios section > div div .servH li:hover .servImgH {
+          display: flex; }
+        .globServicios section > div div .servH li:hover .servImgV {
+          display: flex; }
+        .globServicios section > div div .servV li:hover .servImgH {
+          display: flex; }
+        .globServicios section > div div .servV li:hover .servImgV {
+          display: flex; }
+        .globServicios section > div button {
+          font-size: 24px; }
+        .globServicios section > div h2 {
+          margin-right: 900px;
+          width: 30%; }
+      .globServicios section ul {
+        margin-left: 30px;
+        list-style-type: none; }
+      .globServicios section li:hover {
+        color: #26348C;
+        font-weight: 700; }
+  .banServ {
+    height: 300px; }
+  .tracking-in-expand-fwd {
+    font-size: 48px;
+    position: absolute;
+    top: 210px;
+    left: 18%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 24px; }
-    .globServicios > div h2 {
-      font-size: 36px;
-      font-weight: 700; }
-      .globServicios > div h2:first-child {
-        margin-top: 1%; }
-      .globServicios > div h2:nth-child(2) {
-        color: #26348C; }
-  .globServicios section {
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .globServicios section .servMostrar {
-      display: none; }
-    .globServicios section .servImgH {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 650px;
-      height: 450px; }
-      .globServicios section .servImgH:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section .servImgV {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 400px;
-      height: 600px; }
-      .globServicios section .servImgV:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section > div {
-      position: relative;
-      background-color: transparent;
-      border-bottom: none; }
-      .globServicios section > div div .servH li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servH li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div button {
-        font-size: 32px;
-        background-color: transparent;
-        font-weight: 700; }
-      .globServicios section > div h2 {
-        border-width: thin;
-        border-style: solid;
-        margin-right: 900px;
-        border-right-style: none;
-        border-left-style: none; }
-    .globServicios section ul {
-      margin-left: 30px;
-      list-style-type: none; }
-    .globServicios section li:hover {
-      color: #26348C;
-      font-weight: 700;
-      cursor: pointer; }
-
-.banServ {
-  width: 100%;
-  height: 400px;
-  background: url(../assets/img/baner/baner-serv3.jpeg) fixed center no-repeat;
-  background-size: cover;
-  -webkit-animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.tracking-in-expand-fwd {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px black;
-  text-transform: uppercase;
-  backdrop-filter: none;
-  color: white;
-  font-size: 64px;
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  z-index: 2;
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    text-align: center; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
@@ -1219,119 +1181,65 @@ footer {
 
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
-.globServicios {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 8%;
-  /*h1{
+@media (max-width: 768px) {
+  .globServicios {
+    margin-bottom: 8%; }
+    .globServicios > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .globServicios > div h2 {
+        font-size: 24px; }
+      .globServicios > div p {
+        font-size: 16px; }
+    .globServicios section {
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 16px; }
+      .globServicios section .servImgH {
         display: none;
-    }*/ }
-  .globServicios > div {
+        margin-left: 280px;
+        position: absolute;
+        top: 0;
+        border: black solid 2px;
+        box-shadow: #c0bebe 15px 15px 10px;
+        width: 400px;
+        height: 250px; }
+      .globServicios section .servImgV {
+        display: none;
+        margin-left: 280px;
+        position: absolute;
+        top: 0;
+        border: black solid 2px;
+        box-shadow: #c0bebe 15px 15px 10px;
+        width: 350px;
+        height: 400px; }
+      .globServicios section > div {
+        position: relative;
+        background-color: transparent;
+        border-bottom: none; }
+        .globServicios section > div button {
+          font-size: 20px; }
+        .globServicios section > div h2 {
+          margin-right: 900px;
+          width: 40%; }
+      .globServicios section ul {
+        margin-left: 15px;
+        padding-left: 10px; }
+  .banServ {
+    height: 200px; }
+  .tracking-in-expand-fwd {
+    font-size: 32px;
+    position: absolute;
+    top: 150px;
+    left: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 24px; }
-    .globServicios > div h2 {
-      font-size: 36px;
-      font-weight: 700; }
-      .globServicios > div h2:first-child {
-        margin-top: 1%; }
-      .globServicios > div h2:nth-child(2) {
-        color: #26348C; }
-  .globServicios section {
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .globServicios section .servMostrar {
-      display: none; }
-    .globServicios section .servImgH {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 650px;
-      height: 450px; }
-      .globServicios section .servImgH:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section .servImgV {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 400px;
-      height: 600px; }
-      .globServicios section .servImgV:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section > div {
-      position: relative;
-      background-color: transparent;
-      border-bottom: none; }
-      .globServicios section > div div .servH li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servH li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div button {
-        font-size: 32px;
-        background-color: transparent;
-        font-weight: 700; }
-      .globServicios section > div h2 {
-        border-width: thin;
-        border-style: solid;
-        margin-right: 900px;
-        border-right-style: none;
-        border-left-style: none; }
-    .globServicios section ul {
-      margin-left: 30px;
-      list-style-type: none; }
-    .globServicios section li:hover {
-      color: #26348C;
-      font-weight: 700;
-      cursor: pointer; }
-
-.banServ {
-  width: 100%;
-  height: 400px;
-  background: url(../assets/img/baner/baner-serv3.jpeg) fixed center no-repeat;
-  background-size: cover;
-  -webkit-animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.tracking-in-expand-fwd {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px black;
-  text-transform: uppercase;
-  backdrop-filter: none;
-  color: white;
-  font-size: 64px;
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  z-index: 2;
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    text-align: center; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
@@ -1624,120 +1532,101 @@ footer {
       font-size: 14px; } }
 
 /*FIN DE QS*/
-/*INICIA SERVICIOS*/
-.globServicios {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 8%;
-  /*h1{
+@media (max-width: 425px) {
+  .globServicios {
+    margin-bottom: 8%; }
+    .globServicios > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .globServicios > div h2 {
+        font-size: 20px; }
+        .globServicios > div h2:first-child {
+          margin-top: 5%;
+          margin-bottom: 0; }
+      .globServicios > div p {
+        font-size: 14px; }
+    .globServicios section {
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 16px;
+      gap: 50px; }
+      .globServicios section .servImgH {
         display: none;
-    }*/ }
-  .globServicios > div {
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 100%;
+        height: 200px; }
+        .globServicios section .servImgH:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section .servImgV {
+        display: none;
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 350px;
+        height: 400px; }
+        .globServicios section .servImgV:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section > div {
+        position: relative;
+        background-color: transparent;
+        border-bottom: none; }
+        .globServicios section > div button {
+          font-size: 20px; }
+        .globServicios section > div h2 {
+          margin-right: 900px;
+          width: 100%; }
+      .globServicios section ul {
+        padding-left: 30px;
+        margin-left: 0; }
+        .globServicios section ul li {
+          font-size: 14px; }
+  .banServ {
+    height: 200px; }
+  .tracking-in-expand-fwd {
+    font-size: 32px;
+    position: absolute;
+    top: 125px;
+    left: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 24px; }
-    .globServicios > div h2 {
-      font-size: 36px;
-      font-weight: 700; }
-      .globServicios > div h2:first-child {
-        margin-top: 1%; }
-      .globServicios > div h2:nth-child(2) {
-        color: #26348C; }
-  .globServicios section {
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .globServicios section .servMostrar {
-      display: none; }
-    .globServicios section .servImgH {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 650px;
-      height: 450px; }
-      .globServicios section .servImgH:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section .servImgV {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 400px;
-      height: 600px; }
-      .globServicios section .servImgV:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section > div {
-      position: relative;
-      background-color: transparent;
-      border-bottom: none; }
-      .globServicios section > div div .servH li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servH li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div button {
-        font-size: 32px;
-        background-color: transparent;
-        font-weight: 700; }
-      .globServicios section > div h2 {
-        border-width: thin;
-        border-style: solid;
-        margin-right: 900px;
-        border-right-style: none;
-        border-left-style: none; }
-    .globServicios section ul {
-      margin-left: 30px;
-      list-style-type: none; }
-    .globServicios section li:hover {
-      color: #26348C;
-      font-weight: 700;
-      cursor: pointer; }
-
-.banServ {
-  width: 100%;
-  height: 400px;
-  background: url(../assets/img/baner/baner-serv3.jpeg) fixed center no-repeat;
-  background-size: cover;
-  -webkit-animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.tracking-in-expand-fwd {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px black;
-  text-transform: uppercase;
-  backdrop-filter: none;
-  color: white;
-  font-size: 64px;
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  z-index: 2;
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    text-align: center; }
+  .servH {
+    height: 340px; }
+  .accordion-header {
+    height: 60px; }
+  .accordion > div:first-child img {
+    margin-top: 230px; }
+  .accordion > div:nth-child(2) img {
+    margin-top: 200px; }
+  .accordion > div:nth-child(3) img {
+    margin-top: 150px; }
+  .accordion > div:nth-child(4) img {
+    margin-top: 160px; }
+  .accordion > div:nth-child(6) img {
+    margin-top: 200px; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
@@ -1943,119 +1832,95 @@ footer {
 
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
-.globServicios {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 8%;
-  /*h1{
+@media (max-width: 375px) {
+  .globServicios {
+    margin-bottom: 8%; }
+    .globServicios > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .globServicios > div h2 {
+        font-size: 20px; }
+        .globServicios > div h2:first-child {
+          margin-top: 5%;
+          margin-bottom: 0; }
+      .globServicios > div p {
+        font-size: 14px; }
+    .globServicios section {
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 16px; }
+      .globServicios section .servImgH {
         display: none;
-    }*/ }
-  .globServicios > div {
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 100%;
+        height: 200px; }
+        .globServicios section .servImgH:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section .servImgV {
+        display: none;
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 350px;
+        height: 400px; }
+        .globServicios section .servImgV:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section > div {
+        position: relative;
+        background-color: transparent;
+        border-bottom: none; }
+        .globServicios section > div button {
+          font-size: 20px; }
+        .globServicios section > div h2 {
+          margin-right: 900px;
+          width: 100%; }
+      .globServicios section ul {
+        padding-left: 30px;
+        margin-left: 0;
+        margin-bottom: 200px; }
+  .banServ {
+    height: 200px; }
+  .accordion-collapse {
+    height: 200px;
+    margin-bottom: 200px; }
+    .accordion-collapse img {
+      display: flex;
+      align-items: flex-end; }
+  .tracking-in-expand-fwd {
+    font-size: 32px;
+    position: absolute;
+    top: 125px;
+    left: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 24px; }
-    .globServicios > div h2 {
-      font-size: 36px;
-      font-weight: 700; }
-      .globServicios > div h2:first-child {
-        margin-top: 1%; }
-      .globServicios > div h2:nth-child(2) {
-        color: #26348C; }
-  .globServicios section {
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .globServicios section .servMostrar {
-      display: none; }
-    .globServicios section .servImgH {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 650px;
-      height: 450px; }
-      .globServicios section .servImgH:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section .servImgV {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 400px;
-      height: 600px; }
-      .globServicios section .servImgV:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section > div {
-      position: relative;
-      background-color: transparent;
-      border-bottom: none; }
-      .globServicios section > div div .servH li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servH li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div button {
-        font-size: 32px;
-        background-color: transparent;
-        font-weight: 700; }
-      .globServicios section > div h2 {
-        border-width: thin;
-        border-style: solid;
-        margin-right: 900px;
-        border-right-style: none;
-        border-left-style: none; }
-    .globServicios section ul {
-      margin-left: 30px;
-      list-style-type: none; }
-    .globServicios section li:hover {
-      color: #26348C;
-      font-weight: 700;
-      cursor: pointer; }
-
-.banServ {
-  width: 100%;
-  height: 400px;
-  background: url(../assets/img/baner/baner-serv3.jpeg) fixed center no-repeat;
-  background-size: cover;
-  -webkit-animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.tracking-in-expand-fwd {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px black;
-  text-transform: uppercase;
-  backdrop-filter: none;
-  color: white;
-  font-size: 64px;
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  z-index: 2;
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    text-align: center; }
+  .servH {
+    height: 200px; }
+  .accordion-header {
+    height: 60px; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
@@ -2260,119 +2125,95 @@ footer {
 
 /*FIN DE QS*/
 /*INICIA SERVICIOS*/
-.globServicios {
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 8%;
-  /*h1{
+@media (max-width: 320px) {
+  .globServicios {
+    margin-bottom: 8%; }
+    .globServicios > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column; }
+      .globServicios > div h2 {
+        font-size: 20px; }
+        .globServicios > div h2:first-child {
+          margin-top: 5%;
+          margin-bottom: 0; }
+      .globServicios > div p {
+        font-size: 14px; }
+    .globServicios section {
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 16px; }
+      .globServicios section .servImgH {
         display: none;
-    }*/ }
-  .globServicios > div {
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 100%;
+        height: 200px; }
+        .globServicios section .servImgH:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section .servImgV {
+        display: none;
+        position: absolute;
+        justify-self: center;
+        margin-left: -30px;
+        border: black solid 2px;
+        box-shadow: none;
+        z-index: 1;
+        align-self: end;
+        top: 0;
+        margin-top: 260px;
+        width: 350px;
+        height: 400px; }
+        .globServicios section .servImgV:hover {
+          transform: none;
+          -webkit-transform: none;
+          -moz-transform: none; }
+      .globServicios section > div {
+        position: relative;
+        background-color: transparent;
+        border-bottom: none; }
+        .globServicios section > div button {
+          font-size: 20px; }
+        .globServicios section > div h2 {
+          margin-right: 900px;
+          width: 100%; }
+      .globServicios section ul {
+        padding-left: 30px;
+        margin-left: 0;
+        margin-bottom: 200px; }
+  .banServ {
+    height: 200px; }
+  .accordion-collapse {
+    height: 200px;
+    margin-bottom: 200px; }
+    .accordion-collapse img {
+      display: flex;
+      align-items: flex-end; }
+  .tracking-in-expand-fwd {
+    font-size: 32px;
+    position: absolute;
+    top: 125px;
+    left: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-size: 24px; }
-    .globServicios > div h2 {
-      font-size: 36px;
-      font-weight: 700; }
-      .globServicios > div h2:first-child {
-        margin-top: 1%; }
-      .globServicios > div h2:nth-child(2) {
-        color: #26348C; }
-  .globServicios section {
-    margin-top: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .globServicios section .servMostrar {
-      display: none; }
-    .globServicios section .servImgH {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 650px;
-      height: 450px; }
-      .globServicios section .servImgH:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section .servImgV {
-      display: none;
-      margin-left: 700px;
-      position: absolute;
-      top: 0;
-      border: black solid 2px;
-      box-shadow: #c0bebe 15px 15px 10px;
-      width: 400px;
-      height: 600px; }
-      .globServicios section .servImgV:hover {
-        transform: scale3d(1.1, 1.1, 0.3);
-        -webkit-transform: scale3d(1.1, 1.1, 0.3);
-        -moz-transform: scale3d(1.1, 1.1, 0.3); }
-    .globServicios section > div {
-      position: relative;
-      background-color: transparent;
-      border-bottom: none; }
-      .globServicios section > div div .servH li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servH li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgH {
-        display: flex; }
-      .globServicios section > div div .servV li:hover .servImgV {
-        display: flex; }
-      .globServicios section > div button {
-        font-size: 32px;
-        background-color: transparent;
-        font-weight: 700; }
-      .globServicios section > div h2 {
-        border-width: thin;
-        border-style: solid;
-        margin-right: 900px;
-        border-right-style: none;
-        border-left-style: none; }
-    .globServicios section ul {
-      margin-left: 30px;
-      list-style-type: none; }
-    .globServicios section li:hover {
-      color: #26348C;
-      font-weight: 700;
-      cursor: pointer; }
-
-.banServ {
-  width: 100%;
-  height: 400px;
-  background: url(../assets/img/baner/baner-serv3.jpeg) fixed center no-repeat;
-  background-size: cover;
-  -webkit-animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: banserv 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
-
-.tracking-in-expand-fwd {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 2px black;
-  text-transform: uppercase;
-  backdrop-filter: none;
-  color: white;
-  font-size: 64px;
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  z-index: 2;
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    text-align: center; }
+  .servH {
+    height: 200px; }
+  .accordion-header {
+    height: 60px; } }
 
 /*FIN DE SERVICIOS*/
 /* INICIA LONAS*/
